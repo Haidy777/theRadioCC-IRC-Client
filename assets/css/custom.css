@@ -1,0 +1,12 @@
+.custom-container {
+    padding-top: 10px;
+}
+
+.custom-row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#news-container {
+    overflow-y: auto;
+}

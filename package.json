@@ -1,0 +1,30 @@
+{
+  "name": "theRadioCC-IRC-Client",
+  "version": "0.0.1",
+  "description": "TBD",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Haidy777/theRadioCC-IRC-Client.git"
+  },
+  "author": "Haidy777 (haidy777@haidy777.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Haidy777/theRadioCC-IRC-Client/issues"
+  },
+  "homepage": "https://github.com/Haidy777/theRadioCC-IRC-Client",
+  "dependencies": {
+    "moment": "^2.10.2",
+    "parse-rss": "^1.0.3",
+    "slate-irc": "^0.8.1"
+  },
+  "main": "index.html",
+  "window": {
+    "title": "theRadioCC IRC Client",
+    "width": 1280,
+    "height": 720,
+    "toolbar": false,
+    "frame": true,
+    "resizeable": false,
+    "position": "center"
+  }
+}
