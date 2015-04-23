@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <title>TheRadioCC IRC Client</title>
 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="assets/css/custom.css"/>
 </head>
 <body>
 <script src="assets/js/jquery-2.1.3.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/lodash.min.js"></script>
 
+<script src="assets/js/news.js"></script>
+<script src="assets/js/sendeplan.js"></script>
+<script src="assets/js/runner.js"></script>
 <script src="index.js"></script>
 
 <div class="container-fluid custom-container">
@@ -26,15 +29,18 @@
     </nav>
 
     <div class="row custom-row" id="hauptansicht">
-        <div class="col-md-2 well" id="sendeplan">
-            <h3>Sendeplan Placeholder ;)</h3>
-        </div>
-        <div class="col-md-7 well" id="chat">
+        <div class="col-md-8 well" id="chat">
             <h3>Chat Placeholder ;)</h3>
         </div>
-        <div class="col-md-3 well" id="news">
-            <h4>Aktuelles</h4>
-            <ul class="list-group" id="news-container"></ul>
+        <div class="col-md-4" id="sidebar">
+            <div class="row well custom-row" id="sendeplan">
+                <h4>Sendeplan <span class="refresh-icon glyphicon glyphicon-refresh"></span></h4>
+                <ul class="list-group" id="sendeplan-container"></ul>
+            </div>
+            <div class="row well custom-row" id="news">
+                <h4>Aktuelles <span class="refresh-icon glyphicon glyphicon-refresh"></span></h4>
+                <ul class="list-group" id="news-container"></ul>
+            </div>
         </div>
     </div>
 </div>

@@ -13,6 +13,7 @@
   },
   "homepage": "https://github.com/Haidy777/theRadioCC-IRC-Client",
   "dependencies": {
+    "ical": "^0.4.0",
     "moment": "^2.10.2",
     "parse-rss": "^1.0.3",
     "slate-irc": "^0.8.1"
