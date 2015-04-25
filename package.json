@@ -16,6 +16,7 @@
     "ical": "^0.4.0",
     "moment": "^2.10.2",
     "parse-rss": "^1.0.3",
+    "play-audio": "^0.1.0",
     "slate-irc": "^0.8.1"
   },
   "main": "index.html",
@@ -23,7 +24,7 @@
     "title": "theRadioCC IRC Client",
     "width": 1280,
     "height": 720,
-    "toolbar": false,
+    "toolbar": true,
     "frame": true,
     "resizeable": false,
     "position": "center"

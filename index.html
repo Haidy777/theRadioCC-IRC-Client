@@ -14,19 +14,25 @@
 
 <script src="assets/js/news.js"></script>
 <script src="assets/js/sendeplan.js"></script>
+<script src="assets/js/stream.js"></script>
 <script src="assets/js/runner.js"></script>
 <script src="index.js"></script>
 
 <div class="container-fluid custom-container">
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a href="#" class="navbar-brand">
-                    TheRadioCC
-                </a>
-            </div>
+    <div class="row custom-row">
+        <div class="col-md-8">
+            <h3>TheRadioCC
+                <small>IRC-Client</small>
+            </h3>
         </div>
-    </nav>
+        <div class="col-md-4">
+            <audio controls>
+                <source src="http://ogg.theradio.cc/" type="audio/ogg">
+                <source src="http://mp3.theradio.cc/" type="audio/mpeg">
+            </audio>
+            <p id="now-playing"></p>
+        </div>
+    </div>
 
     <div class="row custom-row" id="hauptansicht">
         <div class="col-md-8 well" id="chat">

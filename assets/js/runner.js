@@ -9,6 +9,7 @@ var runner = {
 
         news.getNews();
         sendeplan.getSendeplan();
+        stream.getCurrentPlayingInfo();
 
         setTimeout(function () {
             $refreshIcon.hide()

@@ -1,5 +1,6 @@
 .custom-container {
     padding-top: 10px;
+    padding-right: 0px;
 }
 
 .custom-row {
@@ -23,4 +24,12 @@
     100% {
         -webkit-transform: rotate(360deg);
     }
+}
+
+audio {
+    width: 100%;
+}
+
+#now-playing {
+    overflow-x: scroll;
 }
