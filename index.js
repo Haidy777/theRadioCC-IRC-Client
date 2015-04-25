@@ -1,6 +1,9 @@
 var parseRSS = require('parse-rss'),
     moment = require('moment');
 
+var audioPlayer = null,
+    audioPlayerVolume = 50;
+
 $(document).ready(function () {
     var elemente = ['#chat', '#sidebar', '.custom-container'],
         sidebarElemente = ['#sendeplan', '#news'],
@@ -26,6 +29,8 @@ $(document).ready(function () {
             'maxHeight': newHeight
         });
     });
+
+    stream.initializePlayer();
 
     runner.start();
 });

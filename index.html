@@ -26,10 +26,36 @@
             </h3>
         </div>
         <div class="col-md-4">
-            <audio controls>
+            <audio preload="none" id="audio-player">
                 <source src="http://ogg.theradio.cc/" type="audio/ogg">
                 <source src="http://mp3.theradio.cc/" type="audio/mpeg">
             </audio>
+            <div class="audio-controls">
+                <div class="half-wrapper pull-left">
+                    <div class="btn-group btn-group-sm" role="group">
+                        <button type="button" class="btn btn-primary" onclick="stream.play()">
+                            <span class="glyphicon glyphicon-play"></span>
+                        </button>
+                        <button type="button" class="btn btn-danger" onclick="stream.stop()">
+                            <span class="glyphicon glyphicon-stop"></span>
+                        </button>
+                        <button type="button" class="btn btn-default" onclick="stream.mute()">
+                            <span class="glyphicon glyphicon-volume-off"></span>
+                        </button>
+                        <button type="button" class="btn btn-warning" onclick="stream.volumeDown()">
+                            <span class="glyphicon glyphicon-volume-down"></span>
+                        </button>
+                        <button type="button" class="btn btn-success" onclick="stream.volumeUp()">
+                            <span class="glyphicon glyphicon-volume-up"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="half-wrapper pull-right">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar" style="width: 50%" id="audio-player-volume"></div>
+                    </div>
+                </div>
+            </div>
             <p id="now-playing"></p>
         </div>
     </div>

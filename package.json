@@ -24,7 +24,7 @@
     "title": "theRadioCC IRC Client",
     "width": 1280,
     "height": 720,
-    "toolbar": true,
+    "toolbar": false,
     "frame": true,
     "resizeable": false,
     "position": "center"

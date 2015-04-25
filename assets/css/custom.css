@@ -26,10 +26,21 @@
     }
 }
 
-audio {
-    width: 100%;
+.audio-controls {
+    height: 30px;
+}
+
+.progress {
+    height: 30px;
 }
 
 #now-playing {
-    overflow-x: scroll;
+    overflow: auto;
+    max-height: 20px;
+    height: 20px;
+}
+
+.half-wrapper {
+    width: 50%;
+    max-width: 50%;
 }
