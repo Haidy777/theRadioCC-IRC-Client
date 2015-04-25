@@ -16,6 +16,11 @@
     overflow-y: auto;
 }
 
+.nickname {
+    width: 100%;
+}
+
+/* Spinning Refresh ;) */
 .refresh-icon {
     -webkit-animation: spin 1s linear infinite;
 }
@@ -33,3 +38,4 @@ audio {
 #now-playing {
     overflow-x: scroll;
 }
+/* Spinning Refresh ;) */

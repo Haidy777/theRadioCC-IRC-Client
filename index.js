@@ -28,4 +28,5 @@ $(document).ready(function () {
     });
 
     runner.start();
+    chat.registerConnectHandler();
 });
